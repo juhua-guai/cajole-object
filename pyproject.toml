@@ -1,0 +1,25 @@
+[project]
+name = "cajole-object"
+version = "0.1.0"
+description = "布布的嘴替日常 - Web 版"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.127.0",
+    "langchain>=1.2.0",
+    "langchain-openai>=1.1.6",
+    "uvicorn>=0.40.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[project.scripts]
+cajole = "src.api.main:app"
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: tests that require live model access or end-to-end runtime dependencies",
+]

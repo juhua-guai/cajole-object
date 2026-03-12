@@ -1,0 +1,17 @@
+# 应用配置文件
+
+[api]
+# 密钥（必填）
+api_key = "your_api_key_here"
+# 模型名称
+model_name = "openai/gpt-4o"
+
+[chat]
+# 保留的最近对话轮数
+max_history_rounds = 10
+
+[assets]
+# 头像路径配置（可选，留空使用默认路径）
+# bubu_avatar_path = "assets/avatars/bubu_avatar.png"
+# bubu_scared_path = "assets/avatars/bubu_scared.png"
+# yier_avatar_path = "assets/avatars/yier_avatar.png"
